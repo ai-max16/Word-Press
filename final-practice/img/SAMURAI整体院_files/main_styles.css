@@ -1,0 +1,48 @@
+/* PC、スマホ共通スタイル */
+body {
+  font-family: 'Merriweather Sans', sans-serif;
+}
+
+/* ヘッダー */
+.header {
+  z-index: 12;
+}
+
+.header_nav > a:link {
+  text-decoration: none;
+  margin-left: 20px;
+  color: #fff;
+}
+
+.header_nav > a:visited {
+  color: #fff;
+  text-shadow: 1px, 1px, #468459;
+}
+
+.header_nav > a:hover {
+  color: #fff;
+  text-shadow: 1px, 1px, #468459;
+  text-decoration: underline;
+}
+
+.header_nav > a:active {
+  color: #fff;
+  text-shadow: 1px, 1px, #468459;
+}
+
+/* メインビジュアル */
+#main-message > img {
+  position: absolute;
+  height: 584px;
+  top: 0;
+  left: 0;
+  z-index: 11;
+}
+
+#main-img {
+  position: absolute;
+  height: 584px;
+  top: 0;
+  right: 0;
+  z-index: 10;
+}

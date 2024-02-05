@@ -1,0 +1,95 @@
+/* PC、スマホ共通スタイル */
+body {
+  font-family: 'Merriweather Sans', sans-serif;
+}
+
+/* ヘッダー */
+.header {
+  z-index: 12;
+}
+
+#logo {
+  width: 240px;
+  height: 32px;
+}
+
+.header_nav {
+  font-size: 14px;
+}
+
+.header_nav > a:link {
+  text-decoration: none;
+  margin-left: 20px;
+  color: #fff;
+}
+
+.header_nav > a:visited {
+  color: #fff;
+  text-shadow: 1px, 1px, #468459;
+}
+
+.header_nav > a:hover {
+  color: #fff;
+  text-shadow: 1px, 1px, #468459;
+  text-decoration: underline;
+}
+
+.header_nav > a:active {
+  color: #fff;
+  text-shadow: 1px, 1px, #468459;
+}
+
+.navbar-toggler {
+  padding: 0 !important;
+  margin-right: 10px;
+  border: none !important;
+}
+
+.btn_open {
+  width: 24px;
+  height: 24px;
+}
+
+.btn_close {
+  width: 24px;
+  height: 24px;
+}
+
+/* ハンバーガーボタンがチェック状態である（押されている）とき、閉じるボタン（×）を表示する */
+#hamburger_btn_check:checked~.hamburger_btn .btn_close {
+  display: block;
+}
+
+/* ハンバーガーボタンがチェック状態である（押されている）とき、ハンバーガーボタンを表示しない */
+#hamburger_btn_check:checked~.hamburger_btn .btn_open {
+  display: none;
+}
+
+/* 最初に表示した時は、閉じるボタン（×）は表示しない */
+.btn_close {
+  display: none;
+}
+
+/* ハンバーガーボタンが押されているかを判断するためのチェックボックスは隠す */
+#hamburger_btn_check {
+  display: none;
+}
+
+/* メインビジュアル */
+#main-message {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 11;
+  width: 100%;
+  height: auto;
+}
+
+#main-img {
+  position: absolute;
+  top: 0;
+  right: 0;
+  z-index: 10;
+  width: 100%;
+  height: auto;
+}
